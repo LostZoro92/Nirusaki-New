@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from bot import db, collection, Config, LOGS, queue,data, list_handler, words
 
 
-ffmpeg = "-map 0:v -map 0:a? -map 0:s? -preset slow -c:v libx265 -vf scale=-2:480 -x265-params no-info=1 -pix_fmt yuv420p -crf 24 -tag:v hvc1 -c:a libopus -vbr 2 -movflags +faststart -threads 1"
+ffmpeg = "-c:v libx265 -vf scale=-2:480 -x265-params no-info=1 -pix_fmt yuv420p -crf 24 -tag:v hvc1 -c:a libopus -vbr 1 -movflags +faststart -threads 1"
 
 
 async def adduser(message):
