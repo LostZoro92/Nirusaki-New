@@ -18,15 +18,15 @@ except:
 
 
 class Config(object):
-  API_ID = int(os.environ.get("API_ID"))
-  API_HASH = str(os.environ.get("API_HASH"))
-  BOT_TOKEN = str(os.environ.get("BOT_TOKEN"))
-  DATABASE_URL = str(os.environ.get("DATABASE_URL"))
-  USERNAME = str(os.environ.get("BOT_USERNAME"))
-  LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
-  AUTH_USERS = list(set(int(x) for x in os.environ.get("AUTH_USERS", "1676326120").split()))
-  ADMIN = list(set(int(x) for x in os.environ.get("ADMIN", "5629750139").split()))
-  OWNER = list(set(int(x) for x in os.environ.get("OWNER").split()))
+  API_ID = os.environ.get("25918874")
+  API_HASH = os.environ.get("87c7c525932cf3d753bea33786ad71ee")
+  BOT_TOKEN = os.environ.get("6285717483:AAEblU-xKCkAPDJedbQ94ASCt5FP4uV5DuM")
+  DATABASE_URL = os.environ.get("mongodb+srv://ultron:ultron@cluster0.pnaaxsa.mongodb.net/?retryWrites=true&w=majority")
+  USERNAME = os.environ.get("UltronEncoder_Bot")
+  LOG_CHANNEL = os.environ.get("-1001811301225")
+  AUTH_USERS = list(set(int(x) for x in os.environ.get("AUTH_USERS", "5179011789").split()))
+  ADMIN = list(set(int(x) for x in os.environ.get("ADMIN", "5179011789").split()))
+  OWNER = list(set(int(x) for x in os.environ.get("5179011789").split()))
   TEMP = 'temp/'
   DOWNLOAD_DIR = str(os.environ.get("DOWNLOAD_DIR"))
 
